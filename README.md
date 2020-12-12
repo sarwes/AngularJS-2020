@@ -4,3 +4,5 @@
 ----
 #Assignment2 -- [Creating a sign up form](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/2.html)
 ----
+#Assignment3 --[w3 schools home page creation with css](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/3.html)
+----
