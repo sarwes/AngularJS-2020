@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<title>Assignment</title>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  color: white;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+  float:left
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+<span style="color:black"><b>User management</b>
+    <button class="login" style="float : right">Login</button>
+    <span class="para" style="float: right">The worlds largest web developer site</span>
+</span>
+<br><br>
+<span>
+<ul>
+    <li class="dropdown"><a class="dropbtn">HTML</a><div class="dropdown-content"><a>html</a></div></li>
+    <li class="dropdown"><a class="dropbtn">Java</a><div class="dropdown-content"><a>Java</a></li>
+    <li class="dropdown"><a class="dropbtn">python</a><div class="dropdown-content"><a>python</a></li>
+    <li class="dropdown"><a class="dropbtn">exercise</a>
+        <div class="dropdown-content">
+            <a>exercise 1</a>
+            <a>exercise 2</a>
+            <a>exercise 3</a>
+        </div>
+    </li>
+</ul>
+</span>
+</body>
+</html>
