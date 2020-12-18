@@ -6,3 +6,7 @@
 ----
 #Assignment3 --[w3 schools home page creation with css](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/3.html)
 ----
+#Assignment4 --[w3 school with side tabs]()
+----
+#Assignment3 --[w3 school with media queiry]()
+----
