@@ -8,5 +8,5 @@
 ----
 #Assignment4 --[w3 school with side tabs](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/4.html)
 ----
-#Assignment5 --[w3 school with media queiry](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/5.html)
+#Assignment5 --[w3 school with media query](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/5.html)
 ----
