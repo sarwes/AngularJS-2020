@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<title>Assignment</title>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.f-s-25{
+  font-size:25px;
+}
+.f-s-15{
+  font-size:15px;
+  background-color:pink;
+}
+
+li {
+  float:right;
+  color: white;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+  float:left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.lside{
+	  display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color:gray;
+    float:left;
+}
+.lefttext{
+  	position:sticky;
+    bottom:0;
+    top:0;
+    text-align:left;   
+}
+.rside{
+	  display: inline-block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color:gray;
+    float:right;
+}
+.righttext{
+	  position:sticky;
+    bottom:0;
+    top:0;
+    text-align:left;   
+}
+.lefttext:hover{
+	background-color:red;
+}
+.righttext:hover{
+	background-color:red;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: pink;
+    color: black;
+}
+.menu{
+	display:none;
+}
+@media screen and (min-width:0px) and (max-width: 900px){
+	.menu{
+  		width: 15px;
+  		height: 1px;
+  		background-color: white;
+  		margin: 6px 0;
+        display:flex;
+        text-align:center;
+        float:left;
+	}
+    .dropdown, .dropbtn, .dropdown-content{
+    	display:none;
+        padding: 14px 16px;
+    }
+    .dropdown:hover .dropdown-content {
+  		display:none;
+	}
+    .lside, .leftside{
+    	display:none;
+    }
+    .rside, .righttext{
+    	display:none;
+    } 
+    .menu:hover{
+    	color:red;
+    }
+    #not{
+    	display:none;
+    }
+}
+</style>
+</head>
+<body>
+<div>
+
+<span ><b class="f-s-25">User management</b></span>
+    <button class="f-s-15" style="float:right">Login</button>
+    <button class="f-s-15" style="float:right">Signup</button>
+    <span class="f-s-25" id="not" style="float:right">The worlds largest web developer site</span>
+</div>
+<br><br>
+<span>
+<ul>
+	<li class="menu"><i class="fas fa-bars"></i></li>
+	<li class="dropdown"><a class="dropbtn">HTML</a><div class="dropdown-content"><a>html</a></div></li>
+    <li class="dropdown"><a class="dropbtn">Java</a><div class="dropdown-content"><a>java</a></div></li>
+    <li class="dropdown"><a class="dropbtn">Python</a><div class="dropdown-content"><a>python</a></div></li>
+    <li class="dropdown"><a class="dropbtn">Exercise</a>
+        <div class="dropdown-content">
+            <a>exercise 1</a>
+            <a>exercise 2</a>
+            <a>exercise 3</a>
+        </div>
+    </li>
+</ul>
+</span>
+<br>
+<div>
+  <span class="lside">
+    <p class="leftside">
+        <a class="lefttext">HTML Intro</a><br>
+          <a class="lefttext">CSS Intro</a><br>
+          <a class="lefttext">JS Intro</a><br>
+      </p>  
+  </span>
+  <span class="rside">
+    <p class="rightside">
+        <a class="righttext">HTML Advanced</a><br>
+          <a class="righttext">CSS Advanced</a><br>
+          <a class="righttext">JS Advanced</a><br>
+      </p>
+  </span>
+  <span style="text-align:center"><p>i am sarwes</p><p>i am sarwes</p><p>i am sarwes</p><p>i am sarwes</p>
+  </span>
+</div>
+
+
+
+<footer>
+  <p>Copyright</p>
+</footer>
+</body>
+</html>
