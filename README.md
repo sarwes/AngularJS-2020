@@ -10,3 +10,5 @@
 ----
 #Assignment5 --[w3 school with media query for mobile view](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/5.html)
 ----
+#Assignment6 --[finding odd even in JS](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/6.html)
+----
