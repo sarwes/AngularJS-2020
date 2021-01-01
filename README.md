@@ -12,3 +12,7 @@
 ----
 #Assignment6 --[finding odd even in JS](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/6.html)
 ----
+#Assignment7 --[examples in JS loops](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/7.html)
+----
+#Assignment8 --[Signup page values in JS and Jquery](https://github.com/sarwes/HTML-CSS-JS-2020/blob/main/8.html)
+----
