@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<title>Assignment</title>
+</head>
+<body>
+<script>
+var a=5;
+if (a==0){
+    console.log("low");
+}
+else if(a==5){
+    console.log("a is 5");
+}
+else{
+    console.log("high");
+}
+for(i=0;i<=a;i++){
+    console.log(i);
+}
+
+var j=0;
+while(a==5){
+    console.log(j);
+    a++;
+}
+switch(a){
+    case 0:
+        console.log("low");
+    default:
+        console.log("high");
+}
+for(i=0;i<a;i++){
+    console.log("1");
+    break;
+}
+for(k=0;k<a;k++){
+    console.log("2");
+    if(k<5){
+        continue;
+        console.log("5");
+    }
+    else{
+        console.log("3");
+    }
+}
+</script>
+</body>
+</html>

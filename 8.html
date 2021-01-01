@@ -1,0 +1,177 @@
+<!doctype html>
+<head>
+<title>Assignment</title>
+</head>
+<body>
+<h1>Practise</h1>
+<form>
+<label for="fname">Firstname</label>
+<input type="text" id="fname" class="fname" name="fname" value="Enter Firstname">
+<br></br>
+<label for="lastname">Lastname</label>
+<input type="text" id="lastname" name="lastname" value="Enter lastname">
+<br></br>
+<label for="pwd">Password</label>
+<input type="password" id="pwd" name="password">
+<br><br>
+<label for="dob">DOB</label>
+<input type="date" id="dob" name="dob"><br><br>
+<label for="pno">Phone number</label>
+<input type="tel" id="pno" pattern=[0-9]{10} name="pno">
+<br>
+<h4>Gender</h4>
+<input type="radio" id="gender" name="gender" onclick="myFunction(this.value)" value="male">
+<label for="male">Male</label>
+<input type="radio" id="gender" name="gender" onclick="myFunctions(this.value)" value="female">
+<label for="female">Female</label>
+<br><br>
+<label for="game">Favourite Sport</label>
+<select id="game" name="sport">
+<option value="Football" selected>Football</option>
+<option value="cricket">Cricket</option>
+</select>
+<br><br>
+<input type="checkbox" id="public" name="activity" value="Is Active" onclick="myFunctionss()">
+<label for="public" value="Is Active">Is Active</label>
+<br></br>
+<input type="Submit" id="button" value="Submit">
+</form>
+<div id="abf">hi</div>
+</body>
+<script>
+document.getElementById("fname")
+document.getElementsByClassName("#fname")
+document.getElementsByTagName("option")
+document.getElementById("fname").getAttribute("value") //to get attribute value
+document.getElementById("abf").innerHTML
+document.getElementById("abf").innerText
+document.getElementById('fname').innerHTML = "changed value"
+document.getElementById("abf").innerText="changed text"
+document.getElementById("fname").getAttribute("value")  //to get input value
+document.getElementsByTagName("INPUT")[0].setAttribute("value","changed")    //[0] is must
+document.getElementById("abf").style.visibility = "hidden"
+document.getElementById("abf").style.visibility = "visible"
+document.getElementById("abf").classname="abf"   // add class  name
+document.getElementById("fname").classList.remove("fname")   // remove class name
+document.getElementById("button").style.color = "blue"   // css
+function myFunction(browser) {
+  document.getElementById("gender").setAttribute("value","male")
+  console.log("male")
+}
+function myFunctions(browser) {
+  document.getElementById("gender").setAttribute("value","female")
+  console.log("female")
+}
+function myFunctionss() {
+  var x = document.getElementById("public").value;
+  console.log(x)
+}
+</script>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript tutorials</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            JAVASCRIPT
+        </h1>
+        
+        <div id="div">Tutorials</div>
+        <div id="div">Practice</div>
+
+        <span class="span">span 1</span>
+        <span class="spanclass">span 2</span>
+        <span class="span">span 3</span>
+
+        <input id="firstname"  name="fname" placeholder="Enter First Name"/>
+        <input id="lastname"  name="lname" placeholder="Enter Last Name"/>
+            <table class="student" id="student">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Education</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sriram</td>
+                        <td>Bsc</td>
+                        <td>21</td>
+                    </tr>
+
+                    <tr>
+                        <td>Karthik</td>
+                        <td>BCA</td>
+                        <td>21</td>
+                    </tr>
+
+                    <tr>
+                        <td>Teja</td>
+                        <td>Bsc</td>
+                        <td>21</td>
+                    </tr>
+                </tbody>
+                </table>
+
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>  
+                <input type="radio" id="male" name="gender" value="others">
+                <label for="others">Others</label><br>
+
+                <label>Select Education :</label>
+                <select id="education" name="education">
+                    <option value="select">SELECT</option>
+                    <option value="bsc">Bsc (Computer Science)</option>
+                    <option value="bca">BCA</option>
+                    <option value="msc">MSC (Computer Science)</option>
+                    <option value="mca">MCA</option>
+                </select>
+                <br>
+
+                <label>fresher : <input type="checkbox" id="mycheck"></label><br>
+                <label>Experience : <input type="checkbox" id="mycheck"></label><br>
+                <label>Pursuing : <input type="checkbox" id="mycheck"></label>
+                
+
+    </body>
+    
+    <script type="text/javascript">
+
+       $(".spanclass").each(function (){
+           if($(this).text() == "span 2"){
+               $(this).html("<b>" +$(this).text() + "</b>")
+           }
+       })
+
+       $("[type='radio']").val() //value of the radio button.
+
+       $("[type='male']").val("gents")  //change the value of the selected type.
+
+       $("[value='bca']").val() //this value changed but the value doesn't show. It will show undefined.
+
+       $("[id='mycheck']").val() //get the element in checkbox.
+
+       $("[id='mycheck']").val("single") //change the value in checkbox.
+
+       $("#firstname").val()    //get the elements in text box.
+
+       $("#firstname").val("sriram")    //change the elements in textbox.
+
+
+    </script>
+    
+</html>
+    
+
+</html>
