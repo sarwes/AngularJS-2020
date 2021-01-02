@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<title>Assignment</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+.hide{
+    display:none;
+}
+</style>
+</head>
+<body>
+<h1>User Management</h1>
+<button class="loginbutton" id="loginbutton" style="float:center" onclick="switchForms('Loginform')">Login</button>
+<button class="loginbutton" id="createbutton" style="float:center" onclick="switchForms('Createform')">CreateAccount</button>
+<div class="hide" id="Loginform">
+    <form class="container" id="formcontainer" onsubmit="return alert1()">
+        <h1>Login</h1>
+        <label for="username">Username</label><br>
+        <input type="text" id="username" placeholder="Enter username"><br>
+        <p class="hide" id="u-n-h">Username should not be empty</p><br>
+        <label for="password">Password</label><br>
+        <input type="text" id="password" placeholder="Enter password"><br>
+        <p class="hide" id="p-n-h">Password should not be empty</p><br>
+        <input type="submit" value="submit"><br>
+    </form>
+</div>
+<div class="hide" id="Createform">
+    <form class="container" id="formcontainer" onsubmit="return alert2()">
+        <h1>CreateAccount</h1>
+        <label for="username">Username</label><br>
+        <input type="text" id="username1" placeholder="Enter username"><br>
+        <p class="hide" id="abs1">Field should not be empty</p>
+        <label for="password">Password</label><br>
+        <input type="text" id="password1" placeholder="Enter password"><br>
+        <p class="hide" id="abs2">Field should not be empty</p>
+        <label for="conformpassword">Conform Password</label><br>
+        <input type="text" id="conformpassword" placeholder="Enter password"><br>
+        <p class="hide" id="abs3">Field should not be empty</p>
+        <p class="hide" id="abs5">Check password and conform password</p>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" placeholder="Enter email"><br>
+        <p class="hide" id="abs4">Field should not be empty</p>
+        <input type="submit" value="submit"><br>
+    </form>
+</div>
+</body>
+<script>
+userlist=[];
+function switchForms(formtype){
+    if(formtype==="Loginform"){
+        $("#Loginform").removeClass("hide");  //next line also crt
+        //$("#Loginform").show();
+        $("#Createform").addClass("hide");
+    }
+    if(formtype==="Createform"){
+        $("#Createform").removeClass("hide");
+        $("#Loginform").addClass("hide");
+    }
+}
+function alert1(){
+    var un=$("#username").val();
+    var pwd=$("password").val();
+    if(un==""){
+        $("#u-n-h").removeClass("hide");
+        return false;
+    }
+    if(pwd==""){
+        $("#p-n-h").removeClass("hide");
+        return false;
+    }
+}
+function alert2(){
+    var us=$("#username1").val();
+    var pd=$("#password1").val();
+    var cpd=$("#conformpassword").val();
+    var em=$("#email").val();
+    if(us==""){
+        $("#abs1").removeClass("hide");
+        return false;
+    }
+    if(pd==""){
+        $("#abs2").removeClass("hide");
+        return false;
+    }
+    if(cpd==""){
+        $("#abs3").removeClass("hide");
+        return false;
+    }
+    if(pd!==cpd){
+        $("#ab5").removeClass("hide");
+    }
+    if(em==""){
+        $("#abs4").removeClass("hide");
+        return false;
+    }
+    if(us!=="" && pd!=="" && cpd!=="" && pd==cpd && em!==""){
+        var userdetails={
+        fname: $("#username1").val(),
+        pwd:$("#password1").val(),
+        cpwd:$("#conformpassword").val(),
+        mail:$("#email").val()
+        }
+        if(userlist.length!==0 && userlist.filter(x => x.email==$("#email").val()).length!==0){   //check not empty and check whether same mail is there
+            window.alert("email"+$("#email").val()+"already exists");
+        }
+        else{
+            userlist.push(userdetails);
+            console.log(userlist);
+        }
+    }
+}
+</script>
+</html>
