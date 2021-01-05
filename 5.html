@@ -3,6 +3,7 @@
 <head>
 <title>Assignment</title>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <style>
 ul {
   list-style-type: none;
@@ -103,6 +104,9 @@ footer {
 .menu{
 	display:none;
 }
+.hide{
+  display:none;
+}
 @media screen and (min-width:0px) and (max-width: 900px){
 	.menu{
   		width: 15px;
@@ -132,6 +136,26 @@ footer {
     #not{
     	display:none;
     }
+    .abc{
+      display: inline-block;
+      color: white;
+      text-align: left;
+      padding: 14px 16px;
+      text-decoration: none;
+      background-color:gray;
+      float:left;
+      position:sticky;
+      bottom:0;
+      top:0;
+      text-align:left;
+    }
+    .hide{
+      display:none;
+    }
+    .fo{
+      position:sticky;
+      bottom:0;
+    }
 }
 </style>
 </head>
@@ -146,7 +170,7 @@ footer {
 <br><br>
 <span>
 <ul>
-	<li class="menu"><i class="fas fa-bars"></i></li>
+	<li class="menu"><i class="fas fa-bars" onclick="navigation()"></i></li>
 	<li class="dropdown"><a class="dropbtn">HTML</a><div class="dropdown-content"><a>html</a></div></li>
     <li class="dropdown"><a class="dropbtn">Java</a><div class="dropdown-content"><a>java</a></div></li>
     <li class="dropdown"><a class="dropbtn">Python</a><div class="dropdown-content"><a>python</a></div></li>
@@ -175,14 +199,19 @@ footer {
           <a class="righttext">JS Advanced</a><br>
       </p>
   </span>
-  <span style="text-align:center"><p>i am sarwes</p><p>i am sarwes</p><p>i am sarwes</p><p>i am sarwes</p>
+  <span id="abc" class="abc hide">
+    <p id="abcd">html</p>
+    <p id="abcd">css</p>
   </span>
+  <span id="sa" class="sa" style="text-align:center"><p>i am sarwes</p><p>i am sarwes</p><p>i am sarwes</p><p>i am sarwes</p>
+  </span>
+  <footer>Copyright</footer>
 </div>
 
-
-
-<footer>
-  <p>Copyright</p>
-</footer>
 </body>
+<script>
+function navigation(){
+  $("#abc").removeClass("hide");
+}
+</script>
 </html>
